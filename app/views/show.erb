@@ -1,10 +1,11 @@
 <html>
   <head></head>
-  <body>
-    <a href="/tasks">Task Index</a>
+  <body style="background-color:lightyellow">
+    <p><a class="btn btn-primary btn-lg" href="/tasks" type="button">Task Index</a></p>
 
-    <h1><%= @task.title %></h1>
 
-    <p><%= @task.description %></p>
+    <h1 style="font-size:50px" align="center"><%= @task.title %></h1>
+
+    <p style="font-size:40px" align="center"><%= @task.description %></p>
   </body>
 </html>
