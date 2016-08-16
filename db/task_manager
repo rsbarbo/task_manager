@@ -1,9 +1,9 @@
 ---
 tasks:
-- id: 1
-  title: Make cookies
-  description: Chocolate chip cookies are so delicious. I am hungry.
 - id: 2
   title: homework
   description: I need to finish my home work asap
-total: 2
+- id: 3
+  title: Remember to be nice!!
+  description: Because being nice is the new cool thing!
+total: 3

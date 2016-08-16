@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:cornflowerblue">
+<body style="background-color:#a5a5a5">
 
   <div class="jumbotron">
     <div class="container">
@@ -14,6 +14,7 @@
     <ul class="list-group">
       <% @tasks.each do |task| %>
       <h4 class="task-index list-group-item" style="color:red"><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h4>
+      <a href="/tasks/<%= task.id %>/edit">Edit</a>
       <% end %>
     </ul>
   </div>

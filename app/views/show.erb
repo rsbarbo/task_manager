@@ -5,7 +5,10 @@
 
 
     <h1 style="font-size:50px" align="center"><%= @task.title %></h1>
-
+    <form action="/tasks/<%= @task.id%>" method="POST">
+        <input type="hidden" name="_method" value="DELETE" />
+        <input type="submit" value="Delete" />
+    </form>
     <p style="font-size:40px" align="center"><%= @task.description %></p>
   </body>
 </html>
