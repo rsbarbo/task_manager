@@ -1,10 +1,21 @@
+<!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
-    <h1>All Tasks</h1>
+<body style="background-color:cornflowerblue">
 
-    <% @tasks.each do |task| %>
-      <h3><%= task.id %>:<a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
-    <% end %>
-  </body>
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="task-index" align="center">All Tasks</h1>
+      <p><a class="btn btn-primary btn-lg" href="/dashboard" type="button" >Home Page</a></p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4" id="list">
+    <ul class="list-group">
+      <% @tasks.each do |task| %>
+      <h4 class="task-index list-group-item" style="color:red"><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h4>
+      <% end %>
+    </ul>
+  </div>
+</body>
 </html>

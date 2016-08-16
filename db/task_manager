@@ -4,12 +4,6 @@ tasks:
   title: Make cookies
   description: Chocolate chip cookies are so delicious. I am hungry.
 - id: 2
-  title: something else
-  description: its awesome to have  a database to keep track of your records
-- id: 3
-  title: new tasks
-  description: something new to add
-- id: 4
   title: homework
-  description: i need to finish my home work asap
-total: 4
+  description: I need to finish my home work asap
+total: 2

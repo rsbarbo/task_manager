@@ -1,9 +1,13 @@
-require 'models/task_manager'
+  require 'models/task_manager'
 
 class TaskManagerApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)
 
   get '/' do
+    erb :dashboard
+  end
+
+  get '/dashboard' do
     erb :dashboard
   end
 
