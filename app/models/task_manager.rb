@@ -48,5 +48,4 @@ class TaskManager
       database["tasks"].delete_if {|task| task["id"] == id}
     end
   end
-
 end
