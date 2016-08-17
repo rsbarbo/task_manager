@@ -49,10 +49,10 @@ class TaskManager
   end
 
   def delete_all
-    database.transaction do
-      database["tasks"] = []
-      database["total"] = 0
-    end
-  end
-
+    database.transaction do
+      database["tasks"] = []
+      database["total"] = 0
+    end
+  end
+  
 end
