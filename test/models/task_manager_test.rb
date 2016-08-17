@@ -1,18 +1,18 @@
 require_relative "../test_helper"
 
-
 class TaskManagerTest < Minitest::Test
+  include TestHelpers
 
-  def test_it_creates_a_task
-    task = TaskManager.new.find(database)
-    assert_equal("some title", task.title)
-    assert_equal(1, task.id)
-    assert_equal("some description", task.description)
-  end
+  def test_task_is_created
+    task_manager.create({
+      :title => "Some title",
+      :description => "Some description"
+      })
+    task = task_manager.find(1)
 
-  def task_manager
-    database = YAML::Store.new('db/task_manager_test')
-    @task_manager ||= TaskManager.new(database)
-  end
+    assert_equal "Some title", task.title
+    assert_equal 1, task.id
+    assert_equal "Some description", task.description
+  end
 
 end
